@@ -39,7 +39,7 @@ export class Movie
             console.log("Title - " + this.title);
             console.log("Release Year - " + this.releaseYear);
             console.log("Nacionality - " + this.nacionality);
-            console.log("Genre - " + this.genre);
+            console.log("Genre- " + this.genre);
             console.log("Actors - " + this.actors);
             console.log("Director - " + this.director);
             console.log("Writer - " + this.writer);
