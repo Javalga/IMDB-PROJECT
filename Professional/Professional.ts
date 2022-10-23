@@ -9,7 +9,7 @@ export class Professional
     public oscarsNumber:number;
     public profession:string;
 
-constructor(name,age,weight,height,isRetired,nacionality,oscarsNumber,profession)
+constructor(name:string,age:number,weight:number,height:number,isRetired:boolean,nacionality:string,oscarsNumber:number,profession:string)
 {
     this.name = name;
     this.age = age;

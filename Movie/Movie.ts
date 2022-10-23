@@ -16,7 +16,7 @@ export class Movie
     public genre:string;
     public plataforma:string;
 
-    constructor(title,releaseYear,actors,nacionality,genre,director,producer,writer,language,plataforma,isMCU,distributor,mainCharacterName)
+    constructor(title:string,releaseYear:number,actors:Professional[],nacionality:string,genre:string,director:Professional,producer:string,writer:Professional,language:string,plataforma:string,isMCU:boolean,distributor:string,mainCharacterName:string)
     {
         this.title = title;
         this.releaseYear = releaseYear;
