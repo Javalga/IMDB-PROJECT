@@ -1,10 +1,9 @@
-import { Movie } from "../Movie/Movie"; 
+import { Movie } from "../Movie/Movie";
 
 
-export class imdb{
+export class imdb {
     movies: Movie[];
-    
-    constructor (movies: Movie[]){
+    constructor(movies: Movie[]) {
         this.movies = movies;
     }
 }

@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var Movie_1 = require("../Movie/Movie");
 var professional_1 = require("../Professional/professional");
 var imdb_1 = require("../imdb/imdb");
+var fs = require("fs");
 var jose = new professional_1.Professional("jose", 34, 1, 2, true, "americana", 7, "actor");
 var carlos = new professional_1.Professional("carlos", 32, 4, 1, false, "colombiana", 1, "actor");
 var maria = new professional_1.Professional("maria", 28, 2, 2, true, "venezolana", 0, "actor");
@@ -10,4 +11,5 @@ var juan = new professional_1.Professional("juan", 41, 1, 3, true, "Español", 4
 var batman = new Movie_1.Movie("batman", 2010, [jose, carlos], "americana", "accion", jose, "producciones", maria, "ingles", "netflix", false, "sony", "nick");
 var cat = new Movie_1.Movie("cat", 2010, [maria, juan], "europea", "drama", carlos, "producciones", juan, "español", "HBO", false, "paramount", "nick");
 var imdb1 = new imdb_1.imdb([batman, cat]);
-console.log(imdb1);
+var stringifiedImdb = JSON.stringify(imdb1, null, 2);
+fs.writeFileSync('./Json/imdbBBDD.json', stringifiedImdb);
