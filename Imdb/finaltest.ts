@@ -11,7 +11,6 @@ let promptIsRetired: boolean = readlineSync.question('Is the professional retire
 let promptNationality: string = readlineSync.question('What\'s the nationality of the professional?\t');
 let promptOscarsNumber: number = readlineSync.question('What\'s the amount of Oscar\'s the professional earned?\t');
 let promptProfession: string = readlineSync.question('What\'s his profession?\t');
-
 let myNewProfessional = new Professional(promptName, promptAge, promptWeight, promptHeight, promptIsRetired, promptNationality, promptOscarsNumber, promptProfession)
 console.log(myNewProfessional);
 let parsedBBDD = JSON.parse(imdbData)

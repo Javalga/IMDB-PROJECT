@@ -1,0 +1,22 @@
+{
+  "name": "imdb-proyect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Javalga/IMDB-PROYECT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Javalga/IMDB-PROYECT/issues"
+  },
+  "homepage": "https://github.com/Javalga/IMDB-PROYECT#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
